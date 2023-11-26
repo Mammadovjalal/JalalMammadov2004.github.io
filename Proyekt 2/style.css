@@ -1,0 +1,66 @@
+
+body {
+  overflow: hidden;
+  background-image: url(/salam.avif);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("/salam.avif"),
+    #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+
+.navbar {
+  font-family: "Lobster", cursive;
+
+    overflow: hidden;
+    background-image: url(/salam.avif);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffff; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd; 
+    color: #555; 
+}
